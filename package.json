@@ -1,24 +1,54 @@
 {
   "name": "lyp-pages",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "description": "static web app workflow",
+  "keywords": [
+    "zce-pages",
+    "zce"
+  ],
+  "homepage": "https://github.com/heartBig/lyp-pages#readme",
+  "bugs": {
+    "url": "https://github.com/heartBig/lyp-pages/issues"
+  },
+  "license": "MIT",
+  "author": "zce <w@zce.me> (https://zce.me)",
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "main": "lib/index.js",
+  "bin": "bin/lyp-pages.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heartBig/lyp-pages.git"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "lint": "standard --fix"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6"
   },
   "devDependencies": {
-    "@vue/cli-service": "~4.5.0",
-    "vue-template-compiler": "^2.6.11"
+    "standard": "^13.1.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "description": "static web app workflow",
-  "main": "index.js",
-  "license": "MIT"
+  "engines": {
+    "node": ">=6"
+  }
 }
